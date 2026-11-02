@@ -1,0 +1,13 @@
+{
+  "name": "js-06-fetch-promises",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercise 6 - 10 JavaScript exercises with fetch (Promises + .then chaining) - starter with tests",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --test --test-reporter=./test/reporter.mjs test/ex1.test.js test/ex2.test.js test/ex3.test.js test/ex4.test.js test/ex5.test.js test/ex6.test.js test/ex7.test.js test/ex8.test.js test/ex9.test.js test/ex10.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

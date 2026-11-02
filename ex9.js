@@ -13,8 +13,12 @@
  * @param {number} postId
  * @returns {Promise} resolves after the result was printed (so whoever calls the function can wait for it)
  */
-function getPostCommentsCount(postId) {
-  // write your code here
+async function getPostCommentsCount(postId) {
+  const post = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+  const data = await post.json();
+  const comments= await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
+  const data2 = await comments.json();
+  console.log("Post has", data2.length, "comments");
 }
 
 module.exports = { getPostCommentsCount };

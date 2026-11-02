@@ -13,7 +13,9 @@
  * @returns {Promise} resolves after the result was printed (so whoever calls the function can wait for it)
  */
 function listUserTodos(userId) {
-  // write your code here
+   return fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
+  .then(response=>response.json())
+  .then(todos=>console.log("User",userId,"has",todos.length,"todos"));
 }
 
 module.exports = { listUserTodos };

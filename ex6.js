@@ -15,7 +15,6 @@
  * @returns {Promise} resolves after the result was printed (so whoever calls the function can wait for it)
  */
 function fetchWithDelay(url, delay) {
-  // write your code here
 }
 
 module.exports = { fetchWithDelay };
